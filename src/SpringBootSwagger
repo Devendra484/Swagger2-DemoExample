@@ -1,0 +1,51 @@
+SpringBoot 2.7.3 + swagger 2
+--------------------------------------------
+
+Dependencies:---
+     	<parent>
+     		<groupId>org.springframework.boot</groupId>
+     		<artifactId>spring-boot-starter-parent</artifactId>
+     		<version>2.5.9</version>
+     		<relativePath/> <!-- lookup parent from repository -->
+     	</parent>
+
+        <dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
+Configuration file:-----
+--------------------
+@EnableSwagger2
+public class SwaggerConfig {
+    @Bean
+    Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2);
+    }
+    /......Extra things can be added.../
+}
+
+
+Springboot 3+swagger
+-----------------------------------------
+Dependencies:-
+    <parent>
+ 		<groupId>org.springframework.boot</groupId>
+ 		<artifactId>spring-boot-starter-parent</artifactId>
+ 		<version>3.0.5</version>
+ 		<relativePath/> <!-- lookup parent from repository -->
+ 	</parent>
+ 	<dependency>
+    			<groupId>org.springdoc</groupId>
+    			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    			<version>2.1.0</version>
+    </dependency>
+
+Configuration file:-
+@OpenAPIDefinition(info = @Info(title = "...",version = "....",description = "..."))

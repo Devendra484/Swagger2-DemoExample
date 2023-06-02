@@ -1,0 +1,3 @@
+com\springboot\Swagger2DemoExampleApplication.class
+com\springboot\controller\ProductsController.class
+com\springboot\config\SwaggerConfig.class
