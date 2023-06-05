@@ -8,6 +8,7 @@ public class Swagger2DemoExampleApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Swagger2DemoExampleApplication.class, args);
+		System.out.println("one change");
 	}
 
 }
