@@ -8,19 +8,18 @@ import io.swagger.v3.oas.annotations.info.License;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.annotations.servers.Server;
-import io.swagger.v3.oas.annotations.servers.Servers;
 import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
 @OpenAPIDefinition(
         info = @Info(
-            title = "Electronics Gadgets",
-            version = "1.0.0",
-            description = "This Modules deals with Electronic gadgets",
-            license = @License(
-                    name = "License"
-            )
+                title = "Electronics Gadgets",
+                version = "1.0.0",
+                description = "This Modules deals with Electronic gadgets",
+                license = @License(
+                        name = "License"
+                )
         ),
         servers = {
                 @Server(
@@ -46,8 +45,7 @@ import org.springframework.context.annotation.Configuration;
         type = SecuritySchemeType.HTTP,
         bearerFormat = "Jwt",
         in = SecuritySchemeIn.HEADER
-)
-public class SwaggerConfig {
+)public class SwaggerConfig {
 
 
 }
